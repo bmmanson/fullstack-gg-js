@@ -1,0 +1,191 @@
+body {
+	background-color:#f7f7f7;
+}
+
+.nav {
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	height: 40px;
+	border-bottom: 1px solid gainsboro;
+	z-index: 1;
+}
+
+#nav-logo {
+	height: 24px;
+	width: 24px;
+	display: block;
+	margin: 8px auto 0 auto;
+}
+
+.container {
+	width: 70%;
+	height: 100vh;
+	margin: 0 auto 0 auto;
+}
+
+.box {
+	border: 1px solid gainsboro;
+	border-radius: 4px;
+}
+
+/* ---- Rules ---- */
+
+.rules {
+	margin: 50px 0 30px 0;
+	min-width: 726px;
+	background-color: white;
+}
+
+.title-bar {
+	border-bottom: 1px solid gainsboro;
+}
+
+.title-bar h1 {
+	font-size: 20px;
+	text-align: center;
+	margin: 5px auto 5px auto;
+	font-weight: bold;
+}
+
+
+
+ .rules-body p span {
+ 	display: block;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bold;
+	margin: 8px auto 0 auto;
+}
+
+.rules-body ul {
+	margin: 16px;
+}
+
+/* ---- Game Info ---- */
+
+.game-info {
+	width: 100%;
+	height: 340px;
+	min-width: 535px;
+	background-color: white;
+	border: 1px solid gainsboro;
+	text-align: center;
+}
+
+.game-info hr {
+	margin: 30px 0 0 0;
+}
+
+.game-info hr:nth-of-type(2) {
+	margin: 0px 0 20px 0;
+}
+
+#main-info-text {
+	font-size: 25px;
+	font-weight: bold;
+	margin: 4px auto 5px auto;
+}
+
+/* ---- UI Styles ---- */
+
+.game-ui {
+	/*width: 100%;*/
+	min-width: 240px;
+	height: 340px;
+	background-color: white;
+	border: 1px solid gainsboro;
+	margin-bottom: 20px;
+}
+
+.game-ui hr {
+	margin: 10px 0 10px 0;
+}
+
+.game-ui #hr-top {
+	margin-top: 30px;
+}
+
+.game-ui input {
+	margin: 0 auto 0 auto;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	border: 0;
+}
+
+.game-ui input:focus {
+	outline: none;
+}
+
+.ui-header-text {
+	font-weight: normal;
+}
+
+.ui-data {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.buttons {
+	margin: 10px 0 10px 0;
+}
+
+.btn-info {
+	width: 80%;
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+.buttons-second-row {
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+.game-ui p {
+	text-align: center;
+}
+
+.game-ui table {
+	text-align: center;
+	border-spacing: 8px;
+	border-collapse: separate;
+	margin: 0 auto 0 auto;
+}
+
+.hr-bottom {
+	margin: 12px 0 12px 0;
+}
+
+#copyright {
+	text-align: center;
+	margin: 0 auto 0 auto;
+	font-size: 14px;
+}
+
+#last-hr {
+	margin-bottom: 120px;
+}
+
+/* ---- Game-State Changes ---- */
+
+.duck-yellow {
+	color: #FBB917;
+}
+
+.ferrari-red {
+	color: #F70D1A;
+}
+
+.pumpkin {
+	color: #F87217;
+}
+
+.emerald {
+	color: #7FE817;
+}
+
+.dodger {
+	color: #1E90FF;
+}

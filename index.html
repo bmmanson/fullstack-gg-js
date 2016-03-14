@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Guess the Number: the Game</title>
+				<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="icon" href="fa-logo_sm.png">
+	</head>
+	<body>
+		<div class="nav">
+			<img src="fa-logo_sm.png" alt="Fullstack Academy Logo" id="nav-logo">
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="box rules">
+						<div class="title-bar">
+							<h1>Guess The Number: The Game</h1>
+						</div>
+						<div class="rules-body">
+							<p><span>Rules and Instruction</span></p>
+							<ul>
+								<li>You have only 5 guesses to guess a random number.</li>
+								<li>The number will always be a multiple of 5 between 5 and 100.</li>
+								<li>You can ask for a hint that'll tell you whether or not the random number is greater than 50. But it'll cost you two guesses!</li>
+								<li>Press the "reset" button to play another round.</li>
+								<li>You get an extra point if you win without using a hint!</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-8">
+					<div class="box game-info">
+						<hr>
+						<p id="main-info-text">Let's get started! Guess a number!</p>
+						<hr>
+						<p>Your last guess was:</p>
+						<p class="ui-data" id="last-guess">You haven't guessed yet!</p>
+						<p>You also guessed:</p>
+						<p class="ui-data" id="guess-log">Ditto!</p>
+						<p>Hint:</p>
+						<p class="ui-data" id="hint-display">Ditto again!</p>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="box game-ui">
+						<hr id="hr-top">
+						<input type="text" placeholder="Guess Here!">
+						<hr>
+						<p class="ui-header-text">Guesses Remaining:</p>
+						<p class="ui-data" id="guesses">5</p>
+						<div class="buttons">
+							<button class="btn btn-info" id="submit-button">Submit</button>
+							<div class="buttons-second-row">
+								<button class="btn btn-danger" id="reset-button">Reset</button>
+								<button class="btn btn-success" id="hint-button">Hint</button>
+							</div>
+						</div>
+						<table>
+							<tr>
+								<th class="ui-header-text">Score:</th>
+								<th class="ui-header-text">Wins:</th>
+								<th class="ui-header-text">Rounds:</th>
+							</tr>
+							<tr>
+								<td class="ui-data" id="score">0</td>
+								<td class="ui-data" id="wins">0</td>
+								<td class="ui-data" id="rounds">0</td>
+							</tr>
+						</table>
+
+					</div>
+				</div>
+			</div>
+
+			<hr class="hr-bottom">
+			<p id="copyright">&copy; Copyright: Ben Manson - 2016</p>
+			<hr class="hr-bottom" id="last-hr">
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="guessinggame.js"></script>
+	</body>
+</html>
